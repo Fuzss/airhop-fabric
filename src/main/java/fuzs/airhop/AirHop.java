@@ -15,13 +15,13 @@ import fuzs.puzzleslib.network.MessageDirection;
 import fuzs.puzzleslib.network.NetworkHandler;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class AirHop implements ModInitializer {
     public static final String MOD_ID = "airhop";
     public static final String MOD_NAME = "Air Hop";
-    public static final Logger LOGGER = LogManager.getLogger(AirHop.MOD_NAME);
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_NAME);
 
     public static final NetworkHandler NETWORK = NetworkHandler.of(MOD_ID);
     @SuppressWarnings("Convert2MethodRef")
